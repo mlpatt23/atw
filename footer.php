@@ -1,3 +1,5 @@
+		</div> <!-- wrapper -->
+		
 		<footer></footer>
 		
 	</body>
