@@ -15,4 +15,14 @@
 	
 	add_action('wp_enqueue_scripts', 'atw_styles');
 	
+	
+	// Add menus to theme
+	function atw_menus() {
+		register_nav_menus(array(
+			'header-menu' => __('Header Menu', 'atw')
+		));
+	}
+	
+	add_action('init', 'atw_menus');
+	
 ?>
