@@ -17,11 +17,16 @@ body {
 	font-size: 16px;
 }
 
+/*** Header Styles ***/
 header {
+	height: 375px;
+}
+
+.header-content {
 	overflow: auto;
 	background-color: rgba(0, 0, 0, .7);
-	margin: 20px 0;
-	
+	position: relative;
+		top: 20px;
 }
 
 .wrapper {
@@ -34,6 +39,12 @@ header {
 	width: 100%;
 }
 
+.logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+/** Nav Styles **/
 nav {
 	width: 100%;
 }
@@ -41,7 +52,12 @@ nav {
 nav ul {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
+	margin: 10px 0;
+}
+
+nav ul li {
+	padding: 5px 10px;
+	text-align: center;
 }
 
 nav ul li.current-menu-item a {
@@ -63,12 +79,20 @@ nav ul li a {
 		width: 92%;
 	}
 	
+	
+}
+
+
+/********** Desktop Styles **********/
+@media only screen and (min-width: 992px) {
+	/*** Header Styles ***/
 	.logo {
 		width: 30%;
 		float: left;
-		
+		margin: 0;
 	}
 	
+	/** Nav Styles **/
 	nav {
 		width: 70%;
 		float: right;
@@ -81,14 +105,18 @@ nav ul li a {
 	nav ul li {
 		display: inline;
 		text-align: left;
-		padding: 45px 20px;
+		padding: 40px 10px;
 	}
 	
-	nav ul li.current-medu-item {
+	nav ul li.current-menu-item {
 		background-color: #df7900;
 	}
-
+	
 	nav ul li a {
-		line-height: 73px;
+		line-height: 75px;
+	}
+	
+	nav ul li.current-menu-item a {
+		color: #ffffff;
 	}
 }
