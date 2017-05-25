@@ -4,6 +4,7 @@
 	function atw_styles() {
 		
 		// Add stylesheets
+		wp_register_style('googlefonts', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700', array(), '1.0.0');
 		wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '6.0.0');
 		wp_register_style('style', get_template_directory_uri() . '/style.css', array('normalize'), '1.0');
 		
@@ -24,5 +25,10 @@
 	}
 	
 	add_action('init', 'atw_menus');
+	
+	
+	// Add featured image support 
+	add_theme_support('post-thumbnails');
+	
 	
 ?>
